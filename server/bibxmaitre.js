@@ -4,11 +4,13 @@ const fs = require('fs');
 const querystring = require('querystring');
 
 
+
 module.exports.JsonMix  = () => {
     var restaurateurs;
     var bibg;
     var bibgxrestau=[];
 
+    
     fs.readFile('restaurateurs.json', 'utf8', function (err, data) {
         if (err) throw err;
         try {
